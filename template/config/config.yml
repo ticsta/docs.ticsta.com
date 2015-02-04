@@ -1,0 +1,36 @@
+
+site:
+  name: Ticsta Docs
+  title: Ticsta Documentation
+  host: docs.ticsta.com
+
+defaultSection: pages
+defaultLanguage: en
+
+###  VARIABLES
+# name - document name
+# slug - document slug
+# title - slug, name
+# section - document section
+# type - document type
+### group_GROUPNAME - example: group_tags or group_categories
+# year - document 4 year
+# month - 01..12
+# i_month - 1..12
+# day - 01..31
+# i_day - 1..31
+# short_year - 2014 > 14
+# extension - file extension
+# unique_name - groupItem uniqueName (ex: categories:politics, tags:new-york)
+# page - currentPage in pagger
+###
+permalink:
+  guide: :language/:section/:title.:extension
+
+
+assets:
+  names:
+    styles:
+      - css/white.min.css
+    scripts:
+      - js/main.min.js

@@ -1,0 +1,19 @@
+---
+layout: ./layout
+section: guides
+type: guide
+maxage: 1h
+permalink: guide
+---
+
+<div class="row">
+<div id="guide-menu" class="col-md-4">
+  <h3>Menu</h3>
+</div>
+<div id="guide-content" class="col-md-8">
+  <h1><%= $document.title %></h1>
+  <div>
+    <%- $util.markdown($document.body.article) %>
+  </div>
+</div>
+</div>

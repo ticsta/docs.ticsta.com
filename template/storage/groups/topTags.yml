@@ -1,0 +1,15 @@
+###
+# select top tags
+###
+
+source: db
+params:
+  action: list
+  model: groupitem
+  select: fields
+  where:
+    group: tags
+  order:
+    countt.total: DESC
+  limit: '@{limit|10}'
+  offset: '@{offset|0}'

@@ -1,0 +1,15 @@
+###
+# select news categories
+###
+
+source: db
+params:
+  action: list
+  model: groupitem
+  select: fields
+  where:
+    group: categories
+  order:
+    createdAt: ASC
+  limit: '@{limit|10}'
+  offset: '@{offset|0}'

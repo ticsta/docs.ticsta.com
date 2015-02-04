@@ -1,0 +1,17 @@
+###
+# select fresh categories
+###
+
+source: db
+params:
+  action: list
+  model: groupitem
+  select: fields
+  where:
+    group: categories
+    updatedAt:
+      $gte: '@{time|$1h}'
+  order:
+    updatedAt: DESC
+  limit: '@{limit|10}'
+  offset: '@{offset|0}'
